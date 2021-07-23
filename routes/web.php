@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::view('/index','dashboard.app');
+Route::view('/login','login');
 Route::get('/', function () {
     return view('welcome');
 });
